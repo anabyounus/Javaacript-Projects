@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-image: url(./office-supplies_23-2148103974.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0%;
+
+}
+.student {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.student h2 {
+    margin: 0;
+    color: #333;
+}
+.student p {
+    margin: 5px 0;
+}
+.fee-status {
+    color: green;
+}
+.fee-status.unpaid {
+    color: red;
+}
+ul {
+    padding-left: 20px; 
+}
