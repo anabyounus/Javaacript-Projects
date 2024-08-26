@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: brown; */
+
+   
+}
+header{
+    background-image: url(./background\ 2.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0rem 0.7rem 1rem gray;
+}
+.headContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+    padding: 3%;
+    background: rgb(255, 255, 255, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 2rem;
+    text-align: center;
+    font-weight: bolder;
+}
+.headContent h1{
+font-size: 4rem;
+color: rgb(255, 255, 255);
+text-shadow: 0rem 0rem 2rem rgb(108, 105, 105);
+}
+.headContent input{
+    width: 20rem;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.8rem;
+    border: none;
+}
+/* =============butto============= */
+.headContent button{
+    padding: 0.8rem;
+    font-size: large;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    background-color:rgb(255, 255, 255) ;
+    color: rgb(0, 0, 0);
+}
+section{
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    
+}
+section h1{
+    font-size: 3rem;
+    color: black
+}
+.btn{
+    display: flex;
+    justify-content: space-evenly;
+    width: 30rem;
+}
+.btn button{
+        margin-top: 2rem;
+        padding: 1rem;
+        border: none;
+        background-color: black;
+        cursor: pointer;
+        color: white;
+        font-weight: bolder;
+        font-size: 1rem;
+        border-radius: 1rem;
+}
+form{
+    display: none;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    
+}
+fieldset input{
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: 40rem;
+    border-bottom: 1px solid grey !important;
+    border: none;
+}
+.courses-cont{
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: 40rem;
+    border: 1px solid black;
+}
+select{
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: 40rem;
+    border-bottom: 1px solid grey !important;
+    border: none;
+}
+fieldset button{
+    margin-top: 1rem;
+    padding: 1rem;
+    border: none;
+    background-color: goldenrod;
+    cursor: pointer;
+    color: white;
+    font-weight: bolder;
+    font-size: 1rem;
+    border-radius: 1rem;
+}
+.studentInfo{
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    box-shadow: 0rem 0.5rem 1rem ;
+}
+.studentInfo ul li{
+    list-style: none;
+}
+footer{
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:black;
+    color: white;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: bolder;
+
+}

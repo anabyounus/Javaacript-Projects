@@ -1,0 +1,70 @@
+body {
+    background: url(./220318-BumperSticker.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10%;
+    min-height: 100vh;
+  }
+
+  /* ============nav bar ================= */
+  /* ===============nav bar=================== */
+  
+  .usr-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+    
+    padding: 15px 10px;
+    color: black;
+    margin-bottom: 15px;
+
+    border-radius: 10px;
+  }
+  #p-5{
+    width: 100%;
+
+  }
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: black  ;
+  }
+ 
+  h1{
+    color: rgb(0, 0, 0);
+  }
+.usr-input:hover{
+    border: 1px solid black;
+box-sizing: border-box;
+box-shadow: #775c5c 10px 10px 10px ;
+}
+  
+  .my-btn {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid white;
+    padding: 14px;
+    border: none;
+    background: transparent;
+    background-color: red;
+    color: black;
+    font-weight: 700;
+  }
+  .my-btn:hover{
+box-shadow: red 10px   ;
+  }
+  
+  #names-list {
+    text-align: center;
+    margin-top: 20px;
+    color: black;
+    cursor: pointer;
+  }

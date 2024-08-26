@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./assest/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="calculator">
+            <form action="">
+                <div class="display">
+                    <input type="text" name="display" id="display">
+                </div>
+                <div>
+                    <input type="button" value="AC" class="operator" onclick="displayClear('')">
+                    <input type="button" value="DE" class="operator" onclick="del('')">
+                    <input type="button" value="%" class="operator" onclick="button('%')">
+                    <input type="button" value="/" class="operator" onclick="button('/')">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="button('7')">
+                    <input type="button" value="8" onclick="button('8')">
+                    <input type="button" value="9" onclick="button('9')">
+                    <input type="button" value="*" class="operator" onclick="button('*')">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="button('4')">
+                    <input type="button" value="5" onclick="button('5')">
+                    <input type="button" value="6" onclick="button('6')">
+                    <input type="button" value="-" class="operator" onclick="button('-')">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="button('1')">
+                    <input type="button" value="2" onclick="button('2')">
+                    <input type="button" value="3" onclick="button('3')">
+                    <input type="button" value="+" class="operator" onclick="button('+')">
+                </div>
+                <div>
+                    <input type="button" value="0" onclick="button('0')">
+                    <input type="button" value="." class="operator" onclick="button('.')">
+                    <input type="button" value="=" class="equal operator" onclick="calculate('')">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./assest/app.js"></script>
+</body>
+
+</html>

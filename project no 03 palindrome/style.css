@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@200;300;400;600;700;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Serif Pro', serif;
+}
+
+body{
+  background-image: url(./1_x-soYiSRXAZrEoGWy0Vrpw.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  min-height: 100vh;
+}
+
+::selection{
+  color: #fff;
+  background: rgb(170,87,204,0.8);
+}
+
+.wrapper{
+  max-width: 500px;
+  background: #fff;
+  border-radius: 7px;
+  padding: 20px 25px 15px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+header h1{
+  font-size: 37px;
+  font-weight: 600;
+}
+
+.content{
+  margin: 20px 0 27px;
+}
+
+.content input{
+  width: 100%;
+  height: 60px;
+  border: 1px solid #999;
+  transition: 0.1s ease;
+  outline: none;
+  padding: 0 17px;
+  font-size: 19px;
+  border-radius: 5px;
+}
+
+.content input::placeholder{
+  color: #999999;
+}
+
+.content input:focus{
+  border: 1px solid #235A7D;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+
+.content button{
+  color: #fff;
+  cursor: pointer;
+  font-size: 17px;
+  margin-top: 20px;
+  width: 100%;
+  height: 56px;
+  border: none;
+  opacity: 0.7;
+  outline: none;
+  border-radius: 5px;
+  pointer-events: none;
+  background: linear-gradient(to right, #903fd7 , #235A7D);
+  transition: opacity 0.15s ease;
+}
+
+.content button.active{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.output-txt{
+  display: none;
+  margin-bottom: 18px;
+  font-size: 19px;
+  text-align: center;
+}
+
+.output-txt span{
+  color: #235A7D;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 520px) {
+  .wrapper{
+    padding: 17px 20px 10px;
+  }
+  header h1{
+    font-size: 25px;
+  }
+  header p{
+    font-size: 16px;
+  }
+  .content input{
+    height: 54px;
+    font-size: 17px;
+  }
+  .content button{
+    height: 50px;
+    font-size: 16px;
+    margin-top: 17px;
+  }
+  .output-txt{
+    font-size: 18px;
+  }
+}

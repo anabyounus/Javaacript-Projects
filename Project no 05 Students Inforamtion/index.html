@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header>
+    <div class="headContent">
+        <h1>Student Information</h1>
+        <label for="IndividualStudent">To see individual Student Information Search here:</label>
+        <input type="text" class="IndividualStudent" placeholder="Enter Student Name" id="IndividualStudent" list="Student">
+    
+        <button id="search">Search</button>
+        <br>
+    </div>
+</header>
+<section>
+    <h1>Records</h1>
+    <div class="btn">
+        <button id="all">All</button>
+        <button id="new">Newest</button>
+        <button id="old">Oldest</button>
+        <button id="add">Add</button>
+    </div>
+<form action="" id="StudentData">
+    <fieldset>
+        <legend>ADD STUDENT INFORMATION</legend>
+            <input type="text" placeholder="FULL NAME *" id="fname">
+            <input type="text" placeholder="STUDENT ID *" id="id">
+            <select name="Department" id="dept" onchange="print">
+                <option value="">Select Department *</option>
+                <option value="Buisness Administration">Buisness Administration</option>
+                <option value="Accounting Banking Finance">Accounting Banking Finance</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Software Engineering">Software Engineering</option>
+                <option value="Artificial Intelligence & Mathematical Science">Artificial Intelligence & Mathematical Science</option>
+                <option value="Media & Communication Studies">Media & Communication Studies</option>
+                <option value="English">English</option>
+                <option value="Social & Development Studies">Social & Development Studies</option>
+                <option value="Education">Education</option>
+                <option value="Enviromental Science">Enviromental Science</option>
+            </select>
+            <select name="Program" id="prog">
+                <option value="">Select Program *</option>
+                <option value="BS Buisness Administration">BS Buisness Administration</option>
+                <option value="BS Accounting Banking Finance">BS Accounting Banking Finance</option>
+                <option value="BS Computer Science">BS Computer Science</option>
+                <option value="BS Software Engineering">BS Software Engineering</option>
+                <option value="BS Artificial Intelligence & Mathematical Science">BS Artificial Intelligence & Mathematical Science</option>
+                <option value="BS Media & Communication Studies">BS Media & Communication Studies</option>
+                <option value="BS English">BS English</option>
+                <option value="BS CYBER SEUCURITY">BS CYBER SECURITY</option>
+                <option value="BS Education">BS Education</option>
+                <option value="BS Enviromental Science">BS Enviromental Science</option>
+            </select>
+            <div class="courses-cont">
+                <h2>COURSES *</h2>
+                <label for="DATA STRUCTURE">DATA STRUCTURE</label><input type="checkbox" id="DATA STRUCTURE"> 
+                <label for="Calculus">Calculus</label><input type="checkbox" id="Calculus"> 
+                <label for="Discrete">Discrete</label><input type="checkbox" id="Discrete"> 
+                <label for="English">English</label><input type="checkbox" id="English"> 
+                <label for="ARTIFICIAL INTELIGENCE">ARTIFICIAL INTELIGENCE</label><input type="checkbox" id="ARTIFICIAL INTELIGENCE">
+            </div>
+            <button id="enroll">ENROLL</button>
+    </fieldset>
+</form>
+<div id="studentInfoCont" style="
+display: none;
+flex-wrap: wrap;
+justify-content: center;
+margin-top: 1rem;
+"></div>
+</section>
+<footer>CopyRights &copy; Reserved by Anab Younus</footer>
+    <script src="./script.js"></script>
+</body>
+</html>
