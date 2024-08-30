@@ -1,0 +1,130 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+}
+
+.todo-container {
+    background: linear-gradient(135deg, #f3ec78, #af4261);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+    color: #fff;
+}
+
+h1 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+#todo-input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #ffc107;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+#todo-input:focus {
+    border-color: #ff5722;
+}
+
+#add-btn {
+    padding: 12px 25px;
+    border: none;
+    background-color: #ff5722;
+    color: white;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#add-btn:hover {
+    background-color: #e64a19;
+    transform: scale(1.05);
+}
+
+.filter-container {
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 8px 15px;
+    border: none;
+    background-color: #607d8b;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.filter-btn.active {
+    background-color: #00bcd4;
+    transform: scale(1.1);
+}
+
+.filter-btn:hover {
+    background-color: #008ba3;
+}
+
+#todo-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.todo-item {
+    background-color: #ffffff;
+    color: #333;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.todo-item:hover {
+    background-color: #e3f2fd;
+    transform: scale(1.02);
+}
+
+.todo-item.completed {
+    text-decoration: line-through;
+    background-color: #c8e6c9;
+    color: #555;
+}
+
+.todo-item button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.todo-item button:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+}
